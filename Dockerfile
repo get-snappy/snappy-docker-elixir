@@ -37,4 +37,4 @@ RUN wget -qO- https://binaries.get-snappy.com/$GO_SNAPPY_VERSION/go-snappy-$GO_S
 RUN mv /tmp/go-snappy-$GO_SNAPPY_VERSION.linux-amd64/go-snappy /usr/local/bin/go-snappy
 RUN rm -rf /tmp/go-snappy-$GO_SNAPPY_VERSION.linux-amd64
 
-ENTRYPOINT [ "/bin/bash" ]
+WORKDIR /app
