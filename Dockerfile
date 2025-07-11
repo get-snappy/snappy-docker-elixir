@@ -36,3 +36,5 @@ RUN asdf set -u elixir $ELIXIR_VERSION
 RUN wget -qO- https://binaries.get-snappy.com/$GO_SNAPPY_VERSION/go-snappy-$GO_SNAPPY_VERSION.linux-amd64.tar.gz | tar xvz -C /tmp
 RUN mv /tmp/go-snappy-$GO_SNAPPY_VERSION.linux-amd64/go-snappy /usr/local/bin/go-snappy
 RUN rm -rf /tmp/go-snappy-$GO_SNAPPY_VERSION.linux-amd64
+
+ENTRYPOINT [ "/bin/bash" ]
